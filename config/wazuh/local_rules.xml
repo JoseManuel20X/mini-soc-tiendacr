@@ -1,0 +1,12 @@
+<!-- Regla propia de Wazuh - Mini SOC TiendaCR -->
+<!-- Archivo: /var/ossec/etc/rules/local_rules.xml (en el SIEM/manager) -->
+<group name="local,syscheck,">
+  <rule id="100001" level="12">
+    <if_group>syscheck</if_group>
+    <field name="file">/var/www/tiendacr</field>
+    <description>CUSTOM: posible defacement - archivo del sitio TiendaCR modificado</description>
+    <mitre>
+      <id>T1565</id>
+    </mitre>
+  </rule>
+</group>
