@@ -1,0 +1,18 @@
+# Evitar subir secretos por accidente
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+*.env
+.env*
+*secret*
+*password*
+*credential*
+wazuh-install-files.tar
+wazuh-passwords.txt
+
+# Basura del sistema
+.DS_Store
+Thumbs.db
