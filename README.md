@@ -1,6 +1,8 @@
 # Mini SOC en la nube — TiendaCR
 **Curso ITI-922 · Integrantes: Steven Ramírez y Manuel Miranda**
 
+📄 **Documentación completa del proyecto:** [`docs/P1_Ramirez_Miranda.pdf`](docs/P1_Ramirez_Miranda.pdf)
+
 ## Arquitectura
 Laboratorio local sobre KVM/QEMU (virt-manager) con red interna aislada `socnet` (10.10.10.0/24)
 y red NAT para internet.
@@ -22,7 +24,7 @@ mini-soc-tiendacr/
 │   ├── suricata/        # suricata.yaml (fragmentos), local.rules
 │   ├── wazuh/           # ossec.conf (agente), local_rules.xml
 │   └── netplan/         # 99-socnet.yaml de cada VM
-├── docs/                # plan de respuesta a incidentes y referencias
+├── docs/                # documentación completa (PDF), plan de respuesta y referencias
 ├── scripts/
 │   └── ataques/         # comandos nmap, hydra, sqlmap, etc.
 └── evidencias/          # capturas (sin credenciales ni IP públicas)
@@ -44,7 +46,7 @@ mini-soc-tiendacr/
 - `config/wazuh/local_rules.xml` — regla personalizada de Wazuh.
 
 ## Ataques y detección
-Ver la tabla del informe (nmap/T1046, hydra/T1110, sqlmap/T1190, FIM/T1565).
+Ver la tabla del [informe](docs/P1_Ramirez_Miranda.pdf) (nmap/T1046, hydra/T1110, sqlmap/T1190, FIM/T1565).
 
 ## Respuesta a incidentes
 El plan basado en NIST SP 800-61 para el ataque de fuerza bruta SSH está en
